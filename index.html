@@ -1,0 +1,488 @@
+  <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Компоненты - Визуальный Словарь</title>
+    
+    <!-- ПРАВИЛЬНО: Подключаем внешний CSS-файл -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <h1 class="main-title">📐 UI Компоненты</h1>
+    <p class="main-subtitle">Визуальный словарь: внешний вид, сленг, код</p>
+
+    <!-- ============================================================ -->
+    <!-- КАТЕГОРИЯ 1: ПОЛЯ ВВОДА (INPUTS) -->
+    <!-- ============================================================ -->
+    <div class="category">
+        <h2 class="category-title">1. Поля ввода (Inputs)</h2>
+        <div class="grid">
+
+            <!-- Text field -->
+            <div class="component-card">
+                <div class="card-header">
+                    <span class="term-name">Text field</span>
+                    <span class="term-slang">инпут / текстарь</span>
+                </div>
+                <div class="card-body">
+                    <div class="term-definition">Однострочное поле для ввода текста (имя, email, адрес).</div>
+                    <div class="component-preview">
+                        <input class="mock-input" type="text" placeholder="Введите текст..." value="Пример текста">
+                    </div>
+                    <div class="code-wrapper">
+                        <div class="code-tabs"><span class="code-tab active">HTML</span><span class="code-tab">CSS</span></div>
+                        <div class="code-content">
+                            <code><span class="tag">&lt;input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">placeholder</span>=<span class="string">"Введите текст..."</span> <span class="attr">value</span>=<span class="string">"Пример текста"</span><span class="tag">&gt;</span></code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Password field -->
+            <div class="component-card">
+                <div class="card-header">
+                    <span class="term-name">Password field</span>
+                    <span class="term-slang">пассворд-инпут</span>
+                </div>
+                <div class="card-body">
+                    <div class="term-definition">Поле для ввода пароля (символы скрыты точками).</div>
+                    <div class="component-preview">
+                        <input class="mock-input" type="password" value="12345678">
+                    </div>
+                    <div class="code-wrapper">
+                        <div class="code-tabs"><span class="code-tab active">HTML</span></div>
+                        <div class="code-content">
+                            <code><span class="tag">&lt;input</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">value</span>=<span class="string">"12345678"</span><span class="tag">&gt;</span></code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search field -->
+            <div class="component-card">
+                <div class="card-header">
+                    <span class="term-name">Search field</span>
+                    <span class="term-slang">сёрч / строка поиска</span>
+                </div>
+                <div class="card-body">
+                    <div class="term-definition">Поле для поиска с иконкой лупы.</div>
+                    <div class="component-preview">
+                        <input class="mock-input" type="search" placeholder="Поиск..." value="iPhone">
+                    </div>
+                    <div class="code-wrapper">
+                        <div class="code-tabs"><span class="code-tab active">HTML</span></div>
+                        <div class="code-content">
+                            <code><span class="tag">&lt;input</span> <span class="attr">type</span>=<span class="string">"search"</span> <span class="attr">placeholder</span>=<span class="string">"Поиск..."</span> <span class="attr">value</span>=<span class="string">"iPhone"</span><span class="tag">&gt;</span></code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- КАТЕГОРИЯ 2: КНОПКИ (BUTTONS) -->
+    <!-- ============================================================ -->
+    <div class="category">
+        <h2 class="category-title">2. Кнопки (Buttons)</h2>
+        <div class="grid">
+
+            <div class="component-card">
+                <div class="card-header">
+                    <span class="term-name">Button</span>
+                    <span class="term-slang">кнопка / баттон</span>
+                </div>
+                <div class="card-body">
+                    <div class="term-definition">Стандартная кнопка для действия (отправить, сохранить).</div>
+                    <div class="component-preview">
+                        <button class="mock-btn">Отправить</button>
+                        <button class="mock-btn-outline">Отмена</button>
+                    </div>
+                    <div class="code-wrapper">
+                        <div class="code-tabs"><span class="code-tab active">HTML</span><span class="code-tab">CSS</span></div>
+                        <div class="code-content">
+                            <code><span class="tag">&lt;button</span> <span class="attr">class</span>=<span class="string">"mock-btn"</span><span class="tag">&gt;</span>Отправить<span class="tag">&lt;/button&gt;</span>
+<span class="tag">&lt;button</span> <span class="attr">class</span>=<span class="string">"mock-btn-outline"</span><span class="tag">&gt;</span>Отмена<span class="tag">&lt;/button&gt;</span></code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAB -->
+            <div class="component-card">
+                <div class="card-header">
+                    <span class="term-name">FAB (Floating Action Button)</span>
+                    <span class="term-slang">фаб / плавающая кнопка</span>
+                </div>
+                <div class="card-body">
+                    <div class="term-definition">Круглая кнопка с иконкой, "плавает" над интерфейсом.</div>
+                    <div class="component-preview" style="justify-content: flex-end;">
+                        <div style="background: #4a90d9; width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">✏️</div>
+                    </div>
+                    <div class="code-wrapper">
+                        <div class="code-tabs"><span class="code-tab active">HTML</span><span class="code-tab">CSS</span></div>
+                        <div class="code-content">
+                            <code><span class="tag">&lt;div</span> <span class="attr">style</span>=<span class="string">"background: #4a90d9; width: 56px; height: 56px; border-radius: 50%; box-shadow: 0 4px 12px rgba(0,0,0,0.3);"</span><span class="tag">&gt;</span>✏️<span class="tag">&lt;/div&gt;</span></code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- КАТЕГОРИЯ 3: НАВИГАЦИЯ (NAVIGATION) -->
+    <!-- ============================================================ -->
+    <div class="category">
+        <h2 class="category-title">3. Навигация (Navigation)</h2>
+        <div class="grid">
+
+            <!-- Breadcrumbs -->
+            <div class="component-card">
+                <div class="card-header">
+                    <span class="term-name">Breadcrumbs</span>
+                    <span class="term-slang">хлебные крошки / путь</span>
+                </div>
+                <div class="card-body">
+                    <div class="term-definition">Цепочка ссылок, показывающая путь от главной страницы.</div>
+                    <div class="component-preview" style="font-size:0.9rem; gap:6px;">
+                        <span style="color:#4a90d9;">Главная</span>
+                        <span style="color:#999;">&gt;</span>
+                        <span style="color:#4a90d9;">Каталог</span>
+                        <span style="color:#999;">&gt;</span>
+                        <span style="font-weight:600;">Смартфоны</span>
+                    </div>
+                    <div class="code-wrapper">
+                        <div class="code-content">
+                            <code><span class="tag">&lt;span</span> <span class="attr">style</span>=<span class="string">"color:#4a90d9;"</span><span class="tag">&gt;</span>Главная<span class="tag">&lt;/span&gt;</span> &gt; <span class="tag">&lt;span</span> <span class="attr">style</span>=<span class="string">"color:#4a90d9;"</span><span class="tag">&gt;</span>Каталог<span class="tag">&lt;/span&gt;</span> &gt; <span class="tag">&lt;span</span> <span class="attr">style</span>=<span class="string">"font-weight:600;"</span><span class="tag">&gt;</span>Смартфоны<span class="tag">&lt;/span&gt;</span></code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="component-card">
+                <div class="card-header">
+                    <span class="term-name">Pagination</span>
+                    <span class="term-slang">пагинация / страницы</span>
+                </div>
+                <div class="card-body">
+                    <div class="term-definition">Разбивка данных на страницы, чтобы не грузить всё сразу.</div>
+                    <div class="component-preview" style="gap:6px; font-size:0.9rem;">
+                        <span style="padding:4px 8px;">◀</span>
+                        <span style="background:#4a90d9; color:white; padding:4px 10px; border-radius:6px;">1</span>
+                        <span style="padding:4px 8px;">2</span>
+                        <span style="padding:4px 8px;">3</span>
+                        <span style="padding:4px 8px;">...</span>
+                        <span style="padding:4px 8px;">10</span>
+                        <span style="padding:4px 8px;">▶</span>
+                    </div>
+                    <div class="code-wrapper">
+                        <div class="code-content">
+                            <code><span class="tag">&lt;span</span><span class="tag">&gt;</span>◀<span class="tag">&lt;/span&gt;</span>
+<span class="tag">&lt;span</span> <span class="attr">style</span>=<span class="string">"background:#4a90d9; color:white; padding:4px 10px; border-radius:6px;"</span><span class="tag">&gt;</span>1<span class="tag">&lt;/span&gt;</span>
+<span class="tag">&lt;span</span><span class="tag">&gt;</span>2<span class="tag">&lt;/span&gt;</span> ... <span class="tag">&lt;span</span><span class="tag">&gt;</span>▶<span class="tag">&lt;/span&gt;</span></code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Bar (Mobile) -->
+            <div class="component-card">
+                <div class="card-header">
+                    <span class="term-name">Tab Bar (Mobile)</span>
+                    <span class="term-slang">нижняя навигация</span>
+                </div>
+                <div class="card-body">
+                    <div class="term-definition">Нижняя панель с иконками для навигации в мобильных приложениях.</div>
+                    <div class="component-preview" style="gap:16px; font-size:0.8rem; background:#1a1a1a; color:white; border-radius:20px; padding:12px 20px;">
+                        <span style="color:#4a90d9;">🏠 Главная</span>
+                        <span style="color:#888;">🔍 Поиск</span>
+                        <span style="color:#888;">➕ Создать</span>
+                        <span style="color:#888;">💬 Сообщения</span>
+                        <span style="color:#888;">👤 Профиль</span>
+                    </div>
+                    <div class="code-wrapper">
+                        <div class="code-content">
+                            <code><span class="tag">&lt;div</span> <span class="attr">style</span>=<span class="string">"background:#1a1a1a; color:white; padding:12px 20px; border-radius:20px; display:flex; gap:16px;"</span><span class="tag">&gt;</span>
+   <span class="tag">&lt;span</span> <span class="attr">style</span>=<span class="string">"color:#4a90d9;"</span><span class="tag">&gt;</span>🏠 Главная<span class="tag">&lt;/span&gt;</span>
+   <span class="tag">&lt;span</span> <span class="attr">style</span>=<span class="string">"color:#888;"</span><span class="tag">&gt;</span>🔍 Поиск<span class="tag">&lt;/span&gt;</span>
+   <span class="tag">&lt;span</span> <span class="attr">style</span>=<span class="string">"color:#888;"</span><span class="tag">&gt;</span>➕ Создать<span class="tag">&lt;/span&gt;</span>
+<span class="tag">&lt;/div&gt;</span></code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- КАТЕГОРИЯ 4: ИНДИКАТОРЫ (INDICATORS) -->
+    <!-- ============================================================ -->
+    <div class="category">
+        <h2 class="category-title">4. Индикаторы (Indicators)</h2>
+        <div class="grid">
+
+            <!-- Badge -->
+            <div class="component-card">
+                <div class="card-header">
+                    <span class="term-name">Badge / Counter</span>
+                    <span class="term-slang">бейдж / счётчик</span>
+                </div>
+                <div class="card-body">
+                    <div class="term-definition">Красный кружок с цифрой, показывающий количество новых уведомлений.</div>
+                    <div class="component-preview" style="gap:20px;">
+                        <span style="position:relative;">🔔
+                            <span style="position:absolute; top:-8px; right:-12px; background:#ef4444; color:white; border-radius:50%; padding:2px 8px; font-size:0.7rem; font-weight:700;">3</span>
+                        </span>
+                        <span class="mock-badge">99+</span>
+                    </div>
+                    <div class="code-wrapper">
+                        <div class="code-content">
+                            <code><span class="tag">&lt;span</span> <span class="attr">style</span>=<span class="string">"position:relative;"</span><span class="tag">&gt;</span>
+   🔔
+   <span class="tag">&lt;span</span> <span class="attr">style</span>=<span class="string">"position:absolute; top:-8px; right:-12px; background:#ef4444; color:white; border-radius:50%; padding:2px 8px; font-size:0.7rem; font-weight:700;"</span><span class="tag">&gt;</span>3<span class="tag">&lt;/span&gt;</span>
+<span class="tag">&lt;/span&gt;</span></code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress bar -->
+            <div class="component-card">
+                <div class="card-header">
+                    <span class="term-name">Progress bar</span>
+                    <span class="term-slang">полоса загрузки</span>
+                </div>
+                <div class="card-body">
+                    <div class="term-definition">Горизонтальная полоса, заполняющаяся по мере выполнения задачи.</div>
+                    <div class="component-preview" style="flex-direction:column; gap:6px; align-items:stretch;">
+                        <div style="height:10px; background:#e5e7eb; border-radius:20px; overflow:hidden;">
+                            <div style="height:100%; width:45%; background:#4a90d9; border-radius:20px;"></div>
+                        </div>
+                        <div style="font-size:0.8rem; text-align:center;">45%</div>
+                    </div>
+                    <div class="code-wrapper">
+                        <div class="code-content">
+                            <code><span class="tag">&lt;div</span> <span class="attr">style</span>=<span class="string">"height:10px; background:#e5e7eb; border-radius:20px; overflow:hidden;"</span><span class="tag">&gt;</span>
+   <span class="tag">&lt;div</span> <span class="attr">style</span>=<span class="string">"height:100%; width:45%; background:#4a90d9; border-radius:20px;"</span><span class="tag">&gt;</span><span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span></code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load Spinner -->
+            <div class="component-card">
+                <div class="card-header">
+                    <span class="term-name">Load Spinner</span>
+                    <span class="term-slang">спиннер / крутилка</span>
+                </div>
+                <div class="card-body">
+                    <div class="term-definition">Вращающаяся иконка, показывающая процесс загрузки.</div>
+                    <div class="component-preview">
+                        <div style="width:40px; height:40px; border:4px solid #e5e7eb; border-top-color:#4a90d9; border-radius:50%; animation: spin 0.8s linear infinite;"></div>
+                    </div>
+                    <div class="code-wrapper">
+                        <div class="code-content">
+                            <code><span class="tag">&lt;div</span> <span class="attr">style</span>=<span class="string">"width:40px; height:40px; border:4px solid #e5e7eb; border-top-color:#4a90d9; border-radius:50%; animation: spin 0.8s linear infinite;"</span><span class="tag">&gt;</span><span class="tag">&lt;/div&gt;</span></code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- КАТЕГОРИЯ 5: УВЕДОМЛЕНИЯ (NOTIFICATIONS) -->
+    <!-- ============================================================ -->
+    <div class="category">
+        <h2 class="category-title">5. Уведомления (Notifications)</h2>
+        <div class="grid">
+
+            <!-- Toast -->
+            <div class="component-card">
+                <div class="card-header">
+                    <span class="term-name">Toast</span>
+                    <span class="term-slang">тост / всплывашка</span>
+                </div>
+                <div class="card-body">
+                    <div class="term-definition">Всплывающее сообщение, которое появляется на секунды и исчезает.</div>
+                    <div class="component-preview">
+                        <div style="background:#333; color:white; padding:12px 20px; border-radius:10px; font-size:0.9rem; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+                            ✅ Данные сохранены
+                        </div>
+                    </div>
+                    <div class="code-wrapper">
+                        <div class="code-content">
+                            <code><span class="tag">&lt;div</span> <span class="attr">style</span>=<span class="string">"background:#333; color:white; padding:12px 20px; border-radius:10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"</span><span class="tag">&gt;</span>✅ Данные сохранены<span class="tag">&lt;/div&gt;</span></code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alert / Banner -->
+            <div class="component-card">
+                <div class="card-header">
+                    <span class="term-name">Alert / Banner</span>
+                    <span class="term-slang">алерт / баннер</span>
+                </div>
+                <div class="card-body">
+                    <div class="term-definition">Сообщение об ошибке, успехе или предупреждении (часто на всю ширину).</div>
+                    <div class="component-preview" style="flex-direction:column; align-items:stretch;">
+                        <div style="background:#fef2f2; border:1px solid #fca5a5; color:#b91c1c; padding:12px 16px; border-radius:8px; font-size:0.9rem;">
+                            ⚠️ Ошибка: неверный логин или пароль
+                        </div>
+                        <div style="background:#f0fdf4; border:1px solid #86efac; color:#166534; padding:12px 16px; border-radius:8px; font-size:0.9rem;">
+                            ✅ Успешно: данные обновлены
+                        </div>
+                    </div>
+                    <div class="code-wrapper">
+                        <div class="code-content">
+                            <code><span class="tag">&lt;div</span> <span class="attr">style</span>=<span class="string">"background:#fef2f2; border:1px solid #fca5a5; color:#b91c1c; padding:12px 16px; border-radius:8px;"</span><span class="tag">&gt;</span>⚠️ Ошибка...<span class="tag">&lt;/div&gt;</span></code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- КАТЕГОРИЯ 6: КОНТЕЙНЕРЫ И МАКЕТЫ (CONTAINERS & LAYOUT) -->
+    <!-- ============================================================ -->
+    <div class="category">
+        <h2 class="category-title">6. Контейнеры и макеты</h2>
+        <div class="grid">
+
+            <!-- Card -->
+            <div class="component-card">
+                <div class="card-header">
+                    <span class="term-name">Card</span>
+                    <span class="term-slang">карточка / кард</span>
+                </div>
+                <div class="card-body">
+                    <div class="term-definition">Блок с информацией (товар, пользователь, пост).</div>
+                    <div class="component-preview" style="flex-direction:column; align-items:stretch; background:#f8fafc;">
+                        <div style="background:white; border-radius:12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding:16px; display:flex; gap:16px; align-items:center;">
+                            <div class="mock-avatar">АИ</div>
+                            <div style="flex:1;">
+                                <div style="font-weight:600;">Анна Иванова</div>
+                                <div style="font-size:0.85rem; color:#666;">Дизайнер</div>
+                            </div>
+                            <button class="mock-btn" style="padding:4px 16px;">✉️</button>
+                        </div>
+                    </div>
+                    <div class="code-wrapper">
+                        <div class="code-content">
+                            <code><span class="tag">&lt;div</span> <span class="attr">style</span>=<span class="string">"background:white; border-radius:12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding:16px; display:flex; gap:16px;"</span><span class="tag">&gt;</span>
+   <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="string">"mock-avatar"</span><span class="tag">&gt;</span>АИ<span class="tag">&lt;/div&gt;</span>
+   <span class="tag">&lt;div&gt;</span>Анна Иванова ...<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span></code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chip / Tag -->
+            <div class="component-card">
+                <div class="card-header">
+                    <span class="term-name">Chip / Tag</span>
+                    <span class="term-slang">чип / тег / метка</span>
+                </div>
+                <div class="card-body">
+                    <div class="term-definition">Маленькие метки для категорий, фильтров или выбранных опций.</div>
+                    <div class="component-preview" style="gap:8px;">
+                        <span class="mock-chip">📱 Смартфоны ✕</span>
+                        <span class="mock-chip">💻 Ноутбуки ✕</span>
+                        <span class="mock-tag">Новинка</span>
+                        <span class="mock-tag">Скидка</span>
+                    </div>
+                    <div class="code-wrapper">
+                        <div class="code-content">
+                            <code><span class="tag">&lt;span</span> <span class="attr">class</span>=<span class="string">"mock-chip"</span><span class="tag">&gt;</span>📱 Смартфоны ✕<span class="tag">&lt;/span&gt;</span>
+<span class="tag">&lt;span</span> <span class="attr">class</span>=<span class="string">"mock-tag"</span><span class="tag">&gt;</span>Новинка<span class="tag">&lt;/span&gt;</span></code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- КАТЕГОРИЯ 7: ОНБОРДИНГ (ONBOARDING) -->
+    <!-- ============================================================ -->
+    <div class="category">
+        <h2 class="category-title">7. Онбординг (Onboarding)</h2>
+        <div class="grid">
+
+            <!-- Tooltip -->
+            <div class="component-card">
+                <div class="card-header">
+                    <span class="term-name">Tooltip</span>
+                    <span class="term-slang">тултип / подсказка</span>
+                </div>
+                <div class="card-body">
+                    <div class="term-definition">Небольшая подсказка, появляющаяся при наведении на элемент.</div>
+                    <div class="component-preview">
+                        <div style="position:relative; display:inline-block;">
+                            <button class="mock-btn" style="background:#6b7280;">❓</button>
+                            <div style="position:absolute; bottom:calc(100% + 8px); left:50%; transform:translateX(-50%); background:#1a1a1a; color:white; padding:6px 12px; border-radius:8px; font-size:0.75rem; white-space:nowrap;">Это подсказка</div>
+                        </div>
+                    </div>
+                    <div class="code-wrapper">
+                        <div class="code-content">
+                            <code><span class="tag">&lt;div</span> <span class="attr">style</span>=<span class="string">"position:relative; display:inline-block;"</span><span class="tag">&gt;</span>
+   <span class="tag">&lt;button&gt;</span>❓<span class="tag">&lt;/button&gt;</span>
+   <span class="tag">&lt;div</span> <span class="attr">style</span>=<span class="string">"position:absolute; bottom:100%; background:#1a1a1a; color:white; padding:6px 12px; border-radius:8px;"</span><span class="tag">&gt;</span>Это подсказка<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span></code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Empty State -->
+            <div class="component-card">
+                <div class="card-header">
+                    <span class="term-name">Empty State</span>
+                    <span class="term-slang">пустышка / заглушка</span>
+                </div>
+                <div class="card-body">
+                    <div class="term-definition">Сообщение, которое показывается, когда данных нет (пустая корзина).</div>
+                    <div class="component-preview" style="flex-direction:column; align-items:center; gap:8px; background:#fafbfc; padding:20px;">
+                        <div style="font-size:3rem;">🛒</div>
+                        <div style="font-weight:600;">Корзина пуста</div>
+                        <div style="font-size:0.9rem; color:#666;">Перейдите в каталог, чтобы выбрать товары</div>
+                        <button class="mock-btn" style="background:#4a90d9;">Перейти в каталог</button>
+                    </div>
+                    <div class="code-wrapper">
+                        <div class="code-content">
+                            <code><span class="tag">&lt;div</span> <span class="attr">style</span>=<span class="string">"text-align:center; padding:20px;"</span><span class="tag">&gt;</span>
+   <span class="tag">&lt;div</span> <span class="attr">style</span>=<span class="string">"font-size:3rem;"</span><span class="tag">&gt;</span>🛒<span class="tag">&lt;/div&gt;</span>
+   <span class="tag">&lt;div</span> <span class="attr">style</span>=<span class="string">"font-weight:600;"</span><span class="tag">&gt;</span>Корзина пуста<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span></code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <style>
+        /* --- Анимация для спиннера --- */
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+
+</body>
+</html>
